@@ -1,0 +1,18 @@
+
+html,
+  body{ 
+	height: 100% 
+	scroll-behavior: smooth }
+
+.contenedor {
+	background-color: #222 
+	font-family: Arial, Helvetica, sans-serif 
+	color: rgb(0, 4, 4) 
+	display: grid 
+	min-height: 100vh 
+	grid-template-rows: auto 1fr auto 
+body 
+	&::-webkit-scrollbar 
+		width: 7px 
+	&::-webkit-scrollbar-thumb 
+		background: #c2500ea0 }

@@ -1,0 +1,92 @@
+
+.main-contacto{ 
+	font-family: Arial, Helvetica, sans-serif 
+	background-color: #e5e5f7 
+	opacity: 5 
+	background-image: radial-gradient(#444cf7 0.5px, transparent 0.5px), radial-gradient(#444cf7 0.5px, #e5e5f7 0.5px) 
+	background-size: 20px 20px 
+	background-position: 0 0, 10px 10px 
+	form 
+		background-color: transparent 
+		margin: auto 
+		width: 90% 
+		max-width: 400px 
+		margin-top: 3em 
+		display: grid 
+		gap: 2.5em 
+		border-style: solid 
+h2 
+	text-align: center 
+	background-color: #e5e5f7 
+	border-radius: 50% 
+a 
+	color: #FF4136 
+.wrap 
+	width: 90% 
+	max-width: 1000px 
+	margin: auto 
+.info 
+	text-align: center 
+	padding: 20px 
+	color: #001F3F 
+	border-bottom: 1px solid #ccc 
+	p 
+		margin-top: 20px 
+.formulario 
+	h2 
+		font-size: 16px 
+		color: #001F3F 
+		margin-bottom: 20px 
+		margin-left: 20px 
+	& > div 
+		padding: 20px 0 
+		border-bottom: 1px solid #ccc 
+	input[type="radio"] 
+		display: none 
+	input[type="radio"]:checked 
+		& + label 
+			padding: 5px 15px 
+			background: #FF4136 
+			border-radius: 2px 
+			color: #fff 
+			&:before 
+				display: none 
+	.checkbox 
+		label 
+			&:before 
+				border-radius: 3px 
+		input[type="checkbox"] 
+			display: none 
+		input[type="checkbox"]:checked 
+			& + label 
+				background: #FF4136 
+				color: #fff 
+				padding: 5px 15px 
+				&:before 
+					display: none 
+.formulario .radio label,
+  .formulario .checkbox label 
+	display: inline-block 
+	cursor: pointer 
+	color: #FF4136 
+	position: relative 
+	padding: 5px 15px 5px 51px 
+	font-size: 1em 
+	border-radius: 5px 
+	-webkit-transition: all 0.3s ease 
+	-o-transition: all 0.3s ease 
+	transition: all 0.3s ease 
+.formulario .radio label:hover,
+  .formulario .checkbox label:hover 
+	background: rgba(255, 65, 54, 0.1) 
+.formulario .radio label:before,
+  .formulario .checkbox label:before 
+	content: "" 
+	display: inline-block 
+	width: 17px 
+	height: 17px 
+	position: absolute 
+	left: 15px 
+	border-radius: 50% 
+	background: none 
+	border: 3px solid #FF4136 }
