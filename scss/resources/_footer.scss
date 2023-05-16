@@ -1,14 +1,15 @@
 .footer{ 
-	background-color: #222 
-	padding: 1em 0 
-	text-align: auto 
-	display: flex 
-	justify-content: space-between 
-	align-items: center 
-	text-decoration: none 
-	margin-top: auto 
-section 
-	min-height: 100vh 
-	box-sizing: border-box }
+	background-color: #222; 
+	padding: 1em 0; 
+	text-align: auto; 
+	display: flex; 
+	justify-content: space-between; 
+	align-items: center; 
+	text-decoration: none; 
+	margin-top: auto; 
+    	&__section{ 
+		min-height: 100vh; 
+		box-sizing: border-box; }
 
  
+		}

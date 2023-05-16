@@ -1,34 +1,36 @@
 
 
 .main-conocenos{ 
-	background-image: url(../Recursos/fotogaleria-argentina-pobreza-vista-aerea-de-la-villa-31-962695.jpg) 
-	background-repeat: no-repeat 
-	background-position: right right 
-	background-size: cover 
-	background-attachment: fixed 
-.vi 
-	font-size: 20px 
-	background-color: #222 
-	color: white 
-	ul 
-		background-color: #222 
-		color: white 
-.list-conocenos 
-	background-color: #222 
-	color: white}
+	background-image: url(../Recursos/fotogaleria-argentina-pobreza-vista-aerea-de-la-villa-31-962695.jpg); 
+	background-repeat: no-repeat; 
+	background-position: right right; 
+	background-size: cover; 
+	background-attachment: fixed;} 
+&__vi {
+	font-size: 20px ;
+	background-color: #222 ;
+	color: white;} 
+	ul {
+		background-color: #222; 
+		color: white; 
+&__list-conocenos {
+	background-color: #222; 
+	color: white;}
 
 
 .parrafo-conocenos{ 
-	text-align: center 
-	text-decoration: solid 
-	font-size: 20px 
-	color: #e5e5f7 
-	background-color: #222 
-.contenido-conocenos 
-	display: flex 
-.mapa 
-	width: 100% 
-	height: 400px 
+	text-align: center; 
+	text-decoration: solid; 
+	font-size: 20px ;
+	color: #e5e5f7 ;
+	background-color: #222 ;}
+.contenido-conocenos {
+	display: flex ;
+.mapa {
+	width: 100% ;
+	height: 400px ;}
 
+	#arriba{
+		background-color: #ccc;
 
-
+}}}

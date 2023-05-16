@@ -1,81 +1,113 @@
- 
-.main-compra{ 
-	background-image: url(../Recursos/vivienda-nueva.jpeg) 
-	background-repeat: no-repeat 
-	background-position: center center 
-	background-size: cover 
-	background-attachment: fixed 
+ .main-compra {
+ 	background-image: url(../Recursos/vivienda-nueva.jpeg);
+ 	background-repeat: no-repeat;
+ 	background-position: center center;
+ 	background-size: cover;
+ 	background-attachment: fixed;
+ }
 
 
 
-#menu{ 
-	background-color: rgb(195, 35, 88) 
-	display: grid 
-	grid-template-columns: repeat(4, 140px) 
-	grid-template-rows: repeat(2, 140px) 
-	justify-content: center 
-	align-content: center 
-	grid-template-areas: "casa casa deptos deptos"
-      "casa casa ph pieza" 
-	.tile 
-		height: 100% 
-		align-content: center 
-		overflow: hidden 
-		cursor: pointer 
-		a 
-			text-decoration: none 
-		.front 
-			color: white 
-			background-color: black 
-			height: 100% 
-			margin: 0px 
-			display: grid 
-			justify-items: center 
-			align-items: center 
-			transition: all 0.3s ease 
-			padding: 20px 
-			box-sizing: border-box 
-		&:hover 
-			.front 
-				margin-top: -100% 
-		.back 
-			background-color: #222 
-			color: white 
-			display: grid 
-			justify-items: center 
-			align-items: center 
-			height: 100% 
-			font-weight: bold 
-			font-size: 28px 
-	.deptos-tile 
-		grid-area: deptos 
-		background-color: yellow 
-		&:hover 
-			.front 
-				margin-top: -50% 
-		.front 
-			background-image: url(../Recursos/jpeg.5.jpg) 
-			background-size: cover 
-			background-position: top center 
-	.casa-tile 
-		grid-area: casa 
-		background-color: red 
-		.front 
-			background-image: url(../Recursos/jpeg.2.jpg ) 
-			background-size: cover 
-			background-position: top center 
-	.ph-tile 
-		grid-area: ph 
-		background-color: rgb(0, 255, 119) 
-		.front 
-			background-image: url(../Recursos/jpeg.7.jpg) 
-			background-size: cover 
-			background-position: top center 
-	.pieza-tile 
-		grid-area: pieza 
-		background-color: rgb(255, 0, 208) 
-		.front 
-			background-image: url(../Recursos/jpeg.4.jpg) 
-			background-size: cover 
-			background-position: top center}
+ &#menu {
+ 	background-color: rgb(195, 35, 88);
+ 	display: grid;
+ 	grid-template-columns: repeat(4, 140px);
+ 	grid-template-rows: repeat(2, 140px);
+ 	justify-content: center;
+ 	align-content: center;
+ 	grid-template-areas:
+ 		"casa casa deptos deptos"
+ 		"casa casa ph pieza"
+ }
 
+ &.tile {
+ 	height: 100%;
+ 	align-content: center;
+ 	overflow: hidden;
+ 	cursor: pointer;
+ }
+
+ .a {
+ 	text-decoration: none;
+ }
+
+ .front {
+ 	color: white;
+ 	background-color: black;
+ 	height: 100%;
+ 	margin: 0px;
+ 	display: grid;
+ 	justify-items: center;
+ 	align-items: center;
+ 	transition: all 0.3s ease;
+ 	padding: 20px;
+ 	box-sizing: border-box;
+ }
+
+ &:hover {
+ 	.front {
+ 		margin-top: -100%
+ 	}
+
+ 	.back {
+ 		background-color: #222;
+ 		color: white;
+ 		display: grid;
+ 		justify-items: center;
+ 		align-items: center;
+ 		height: 100%;
+ 		font-weight: bold;
+ 		font-size: 28px;
+
+ 		.deptos-tile {
+ 			grid-area: deptos;
+ 			background-color: yellow;
+
+ 			&:hover {
+ 				&__front {
+ 					margin-top: -50%;
+
+ 					.front {
+ 						background-image: url(../Recursos/jpeg.5.jpg);
+ 						background-size: cover;
+ 						background-position: top center;
+ 					}
+
+ 					.casa-tile {
+ 						grid-area: casa;
+ 						background-color: red;
+ 					}
+
+ 					.front {
+ 						background-image: url(../Recursos/jpeg.2.jpg );
+ 						background-size: cover;
+ 						background-position: top center;
+ 					}
+
+ 					.ph-tile {
+ 						grid-area: ph;
+ 						background-color: rgb(0, 255, 119);
+ 					}
+
+ 					.front {
+ 						background-image: url(../Recursos/jpeg.7.jpg);
+ 						background-size: cover;
+ 						background-position: top center;
+
+ 						.pieza-tile {
+ 							grid-area: pieza;
+ 							background-color: rgb(255, 0, 208);
+
+ 							.front {
+ 								background-image: url(../Recursos/jpeg.4.jpg);
+ 								background-size: cover;
+ 								background-position: top center;
+ 							}
+
+ 						}
+ 					}
+ 				}
+ 			}
+ 		}
+ 	}
+ }
